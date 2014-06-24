@@ -5,6 +5,12 @@
     left: 0px; 
     top: 0px; 
     z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
 }
 
 .stretch {
@@ -12,23 +18,63 @@
     height:100%;
 }
 
-.homepage-search-container {
-  position: absolute;
-  height: 30px;
-  width: 400px;
-  margin: -15px 0 0 -200px;
-  top: 37%;
-  left: 50%;
+.donkey-form-container {
+  margin-top: 250px;
 }
 
-.homepage-search-container input.form-control {
+.donkey-title {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.donkey-form input.form-control {
   font-size: 20px;
   line-height: 20px;
   height: 30px;
   width: 400px;
   padding-top: 8px;
+  margin-bottom: 10px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
   text-align: center;
+}
+
+.donkey-form input.btn {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  width: 400px;  
+}
+
+
+.word-line {
+  margin-top: 30px;
+}
+
+.word {
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.adjective {
+  font-size: 30px;
+  font-style: italic;
+  margin-right: 20px;
+}
+
+.pronounciation {
+  font-size: 25px;
+}
+
+.definition-line {
+  margin-top: 20px;
+}
+
+.definition {
+  font-size: 20px;
+  margin-left: 15px;
 }

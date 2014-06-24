@@ -37,7 +37,7 @@ gem 'thin'
 gem 'binding_of_caller'
 gem 'therubyracer'
 gem 'less-rails'
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails', branch: 'bootstrap3'
 gem 'font-awesome-rails'
 
 gem 'rails_12factor', group: :production

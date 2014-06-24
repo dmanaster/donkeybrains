@@ -53,16 +53,16 @@ class CertificatePdf < Prawn::Document
 
   def insert_president_signature
     font "#{Rails.root}/app/assets/fonts/sweetly_broken.ttf"
-    text_box "Noah Mathers", :align => :center, :size => 36, :at => [50, 90], width: 200
+    text_box "#{@certificate.president}", :align => :center, :size => 36, :at => [50, 90], width: 200
     font "Helvetica"
-    text_box "Noah Mathers \n President, \n #{@certificate.institution}", :align => :center, :size => 12, :at => [50, 50], width: 200
+    text_box "#{@certificate.president} \n President, \n #{@certificate.institution}", :align => :center, :size => 12, :at => [50, 50], width: 200
   end
 
   def insert_psychiatrist_signature
     font "#{Rails.root}/app/assets/fonts/saint_andrews_queen.ttf"
-    text_box "Christina Haberkern", :align => :center, :size => 30, :at => [500, 75], width: 200
+    text_box "#{@certificate.psychiatrist}", :align => :center, :size => 30, :at => [500, 75], width: 200
     font "Helvetica"
-    text_box "Christina Haberkern \n Attending Psychiatrist, \n #{@certificate.institution}", :align => :center, :size => 12, :at => [500, 50], width: 200
+    text_box "#{@certificate.psychiatrist} \n Attending Psychiatrist, \n #{@certificate.institution}", :align => :center, :size => 12, :at => [500, 50], width: 200
   end
 
 end
