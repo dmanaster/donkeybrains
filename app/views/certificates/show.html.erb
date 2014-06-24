@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @certificate.name %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @certificate.institution %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @certificate.state %>
+</p>
+
+<p>
+  <strong>President:</strong>
+  <%= @certificate.president %>
+</p>
+
+<p>
+  <strong>Psychiatrist:</strong>
+  <%= @certificate.psychiatrist %>
+</p>
+
+<%= link_to 'Edit', edit_certificate_path(@certificate) %> |
+<%= link_to 'Back', certificates_path %>
