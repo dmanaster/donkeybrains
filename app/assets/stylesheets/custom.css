@@ -1,0 +1,34 @@
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+.homepage-search-container {
+  position: absolute;
+  height: 30px;
+  width: 400px;
+  margin: -15px 0 0 -200px;
+  top: 37%;
+  left: 50%;
+}
+
+.homepage-search-container input.form-control {
+  font-size: 20px;
+  line-height: 20px;
+  height: 30px;
+  width: 400px;
+  padding-top: 8px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
