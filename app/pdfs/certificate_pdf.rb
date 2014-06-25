@@ -28,7 +28,7 @@ class CertificatePdf < Prawn::Document
 
   def insert_logo
     logo = "#{Rails.root}/app/assets/images/medical_symbol.png"
-    image logo, :position => :center, :vposition => 70, :scale => 0.35
+    image logo, :position => :center, :vposition => 70, :scale => 0.40
   end
 
   def write_text

@@ -17,7 +17,7 @@
 .donkey-image-container {
   margin-top: 60px;
   height: 500px;
-  background: url(donkey_head.jpg) no-repeat center center;
+  background: url(donkey_head.png) no-repeat center center;
 }
 
 .donkey-form label.control-label {
@@ -53,11 +53,11 @@
 
 .btn-xl {
     padding: 18px 28px;
-    font-size: 22px;
+    font-size: 30px;
     line-height: normal;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
 }
 
 
