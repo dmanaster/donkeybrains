@@ -1,16 +1,72 @@
-<div class="word-line">
-  <span class="word">donkey-brained</span> <span class="adjective">adjective</span> <span class="pronounciation">\dong-kee breynz\</span>
-</div>
-<div class="definition-line">
-   <span class="definition">: to have the brains of the donkey or a donkey-type creature</span>
+<div class="row">
+  <div class="definition-container col-sm-12">
+    <div class="container">
+      <div class="row word-line">
+        <span class="word">donkey brained</span> <span class="adjective">adjective</span> <span class="pronounciation">\dong-kee breynd\</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row definition-line">
+         <span class="definition">: to have the brains of the donkey or a donkey-type creature</span>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="donkey-form-container">
+<div class="container">
+
   <div class="row">
     <div class="donkey-title col-sm-12">
-      How do we know you're not a donkey brain?
+      How do we know you're not donkey brained?
     </div>
   </div>
 
-  <%= render 'form' %>
+  <div class="row">
+    <div class="donkey-form-container col-sm-6">
+      <%= form_for(@certificate, :html => { :class => "form-horizontal donkey-form" } ) do |f| %>
+        <% if @certificate.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@certificate.errors.count, "error") %> prohibited this certificate from being saved:</h2>
+
+            <ul>
+            <% @certificate.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+          <div class="form-group">
+            <%= f.label :name, :class => "control-label" %>
+            <%= f.text_field :name, :placeholder => "Frank Reynolds", :class => "form-control" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :institution, "Mental Institution", :class => "control-label" %>
+            <%= f.text_field :institution, :placeholder => "Reid Mental Institution", :class => "form-control" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :state, :class => "control-label" %>
+            <%= f.text_field :state, :placeholder => "Pennsylvania", :class => "form-control" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :president, :class => "control-label" %>
+            <%= f.text_field :president, :placeholder => "Noah Mathers", :class => "form-control" %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :psychiatrist, "Attending Psychiatrist", :class => "control-label" %>
+            <%= f.text_field :psychiatrist, :placeholder => "Christina Haberkern", :class => "form-control" %>
+          </div>
+    </div>
+    <div class="donkey-image-container col-sm-6">
+    </div>
+  </div>
+  <div class="row">    
+    <div class="form-group button-container">
+      <%= f.submit "Because I have a certificate!", :class => " btn btn-xl btn-primary" %>
+    </div>
+      <% end %>
+  </div>
 </div>
