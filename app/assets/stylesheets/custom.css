@@ -11,13 +11,19 @@
 }
 
 .donkey-form-container {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .donkey-image-container {
-  margin-top: 60px;
+  margin-top: 40px;
   height: 500px;
   background: url(donkey_head.png) no-repeat center center;
+}
+
+@media (max-width: 992px) {
+  .donkey-image-container {
+    background: url(donkey_head.png) no-repeat right center;
+  }
 }
 
 .donkey-form label.control-label {
