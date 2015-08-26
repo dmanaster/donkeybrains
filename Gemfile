@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'eventmachine', '~> 1.0.8'
+# gem 'libv8', '~> 4.5.95.5'
 gem 'prawn'
 gem 'thin'
 gem 'binding_of_caller'
@@ -56,6 +58,6 @@ gem 'unicorn'
 # gem 'capistrano', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+# gem 'debugger', group: [:development, :test]
 
-ruby "2.1.1"
+ruby "2.2.1"
